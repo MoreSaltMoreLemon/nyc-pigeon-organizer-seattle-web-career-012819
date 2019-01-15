@@ -2,14 +2,8 @@ def nyc_pigeon_organizer(data)
   organized_by_pigeons = {}
   data.each do |property, values|
     values.each do |value, pigeons|
-      # puts "VALUE: " + value.to_s
       pigeons.each do |pigeon|
-        # puts "PIGEON " + pigeon.to_s
-        # puts organized_by_pigeons.inspect
         value_name = value.to_s
-        # unless organized_by_pigeons.is_a? Hash
-        #   organized_by_pigeons = {}
-        # end
         unless organized_by_pigeons.key?(pigeon)
           organized_by_pigeons[pigeon] = {}
         end
